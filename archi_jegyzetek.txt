@@ -1,0 +1,183 @@
+But How Do It Know című angol nyelvű könyv jegyzete most így magyarul!
+
+Flip-flop: 32. oldal, Remember When
+   
+   Byte: 43. oldal, Eight is Enough (8 bit + Set)
+   
+   Enabler: kimenet engedélyezése, 50. oldal
+   
+   Regiszter: Byte + Enabler, 51. oldal
+   
+   Busz: 53. oldal
+         
+         Set: buszról a regiszterbe BE (Set Input)
+      Enable: regiszterből a buszra KI (Enable Output)
+      
+      
+Dekóder: 58. oldal, input-bitek lehetséges kombinációi mind
+         Bekapcsolnak egy-egy kimenetet. 
+   
+   Legegyszerűbb: 2X4 ahol
+   
+   Out0 = !A & !B (00 = 0)
+   Out1 = !A &  B (01 = 1)
+   Out2 =  A & !B (10 = 2)
+   Out3 =  A &  B (11 = 3)
+   
+
+RAM: 62. oldal, First half of the computer. 2D mátrix
+     
+     64. oldal: Címregiszter (MAR) -> Dekóderek -> Rács
+     
+     66. oldal: rács egyik pontja, leírás az előző oldalon
+         
+         Bus -> RAM : (RácsX & RácsY & [...]) & Set  BE
+         RAM -> Bus : (RácsX & RácsY & [...]) & Enable  KI
+         
+         Megj.: [...] -> 3D Mátrix!!! Nincs a könyvben.
+
+   
+Számrendszerek: 70. oldaltól 80.-ig
+   
+   Hatvanas: 75. oldal (óra -> perc -> sec)
+       Hexa: 76. oldal alja
+
+   
+CPU intro: 82. oldal, The other half of the computer
+   
+   Regiszterek: 4 db general purpose + TMP, akkumulátor, MAR
+   
+   Vezérlés: Set & Enable bitek kapcsolgatása mindenütt, hogy
+             
+             Mi Kerüljön Buszra & Hová Menjen
+
+
+ALU áramkörei:
+   Shifter:    89. oldal
+   Inverter:   92.
+   Logika*:    94-99
+   Összeadó:   100.
+   Komparátor: 105.
+   
+   Megj.: sokbites logikai kapu = Halmazművelet! Nincs a könyben.
+     AND = Metszet
+     OR  = Unió
+     NOT = Complement
+     XOR = Symmetric Difference
+   
+
+Összeadó:
+   Írásbeli összeadás: 
+      Számokat felírni jobbra igazítva egymás alá ÉS
+      Jobbról Balra minden oszlopot alul összeadni.
+      Ha egy oszlop összege 10-nél nagyobb, akkor
+         Levonjuk azt a tizet & a következő oszlop
+         Összegéhez VAGY a legvégén a semmihez
+         
+         Adunk hozzá egyet -> Carry!!!
+         
+   Megj.: Jobbra legkisebb = Least Significant Bit (LSB)
+          Balra legnagyobb =  Most Significant Bit (MSB)
+          
+          MERT egyes CPU-k "fordítva" tárolják a számokat
+               Lásd: big-endian vs little-endian
+   
+   Két bit összege: 0 vagy 1 vagy 2
+   
+      Összeg: A xor B (mert mindkettő = 2 = 10 = 0 + Carry)
+       Carry: A  &  B
+   
+   Két bit + bejövő carry összege: A + B + C
+      
+      0 = !A & !B  & !C -> Összeg nincs ÉS Carry se megy tovább
+      
+      1 =  A x  B  x  C -> Összeg van DE Carry nem megy tovább
+      
+      2 = (A &  B) x ((A x B) & C) -> Összeg nincs DE Carry megy
+      
+      3 =  A &  B &  C -> Összeg van ÉS Carry is megy
+       
+      Összeg: (A x B) x C vagyis (A + B) + C
+       
+       Carry: (A & B) | ((A x B) & C) vagyis 2 a XOR helyett OR-al
+   
+   Sok bit összeadása: CarryOut = köv. CarryIn
+   
+
+Komparátor: két szám be, két bit ki (105. oldal)
+   Out1: A = B ? => !(A xor B)
+   Out2: A > B ? =>   A  & !B 
+   
+   Vagy: A & (A xor B) mert a Xor már ott van, és a másik 
+   inverter így nem kell, tehát azt megspórolhatjuk!
+   
+   Itt is végigmegyünk a biteken, csak itt 
+      - Balról jobbra, az MSB-től a kisebb bitek felé
+      - Két carry van
+      
+      Out1 = Carry1 & !(A xor B)
+      Out2 = Carry2 | (Carry1 & A & (A xor B))
+      
+      Másiknál is kell Carry1 mert csak a legnagyobb eltérő
+      bit-párt vizsgáljuk meg! Pl 001111 < 010000 esetén hogy
+      a 3. bitnél ne kapcsolódjon be az "A > B" jel.
+      
+
+Teljes ALU: 112. oldal!
+   Be:
+   - Operandusok: A és B
+   - Opcode: melyik műveletet hajtsuk végre?
+   - Carry (előző műveletből)
+   Ki:
+   - Eredmény: C
+   - Komparátor jelei: "A = B" és "A > B"
+   - Zéró jel: lásd a 108. oldalon!
+   - Carry
+   
+
+Bus1: TMP és ALU közé ékelődő áramkör, 115. oldal
+      Szerepét lásd később
+
+Teljes gép: 116. oldal
+
+   TMP: ha két operandus van, az elsőt tárolja, hogy addig a
+        másik kerüljön a buszra & onnan szintén az ALU-ba   
+
+
+Órajel: 118. oldal, the Clock
+   Clk OR DelayedClk -> Enable Output (hosszú jel)
+   Clk && DelayedClk -> Set Input (rövid jel)
+   
+
+Léptető: 125. oldal, Step by Step. Áramkör: 129. oldal
+
+Vezérlő "kerete": 132. oldal, Everything's Under Control
+
+Két szám összeadása: 134. oldal, Doing Something Useful Revisited
+
+   Léptető kimeneteit egy-egy lépés forrás-regiszterének enable
+   bemenetéhez és cél-regiszterének set bemenetéhez kapcsolni
+      1.) A operandus betöltése a TMP-be
+      2.) B betöltése & eredmény tárolása az akkumulátorban
+      3.) Eredmény betöltése az R0-ba
+      
+      Megj.: buszon egyszerre csak egy dolog lehet!!!
+
+
+Utasítás-regiszter: 141. oldal, The First Great Invention
+   
+   Végrehajtó
+   
+   IAR -> RAM -> IR -> Vezérlőegység -> ALU
+   
+   Instruction Address Register: köv. utasítás címe a RAM-ban
+   Instruction Register: utasítás gépi kódja
+   
+      Gépi kódokról bővebben: assembly kurzus anyaga!
+
+   Bus1: int++ egy clk cikluson belül a busz elkerülésével, hogy
+         Buszon (amiről ALU az egyik operandust közvetlen veszi)
+         az int lehessen & az ACC set-bitjét is ha meghajtjuk,
+         
+   Megj.: ALU opkód nem tárolódik regiszterben DE 0 = Add
+          úgyhogy az opkód biteket nem kell meghajtani
