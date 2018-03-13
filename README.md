@@ -9,6 +9,6 @@ Daniel Marton
 
 daniel dot marton at dzsíméjl dot com
 
-[Lingdin!!!](https://www.linkedin.com/in/martondanidani)
+LinkedIn: [martondanidani](https://www.linkedin.com/in/martondanidani)
 
-fb: danielhoudtvankaas
+Facebook: danielhoudtvankaas (NSFW!!!)
