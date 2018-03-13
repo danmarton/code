@@ -11,4 +11,6 @@ Daniel Marton
 
 daniel dot marton at dzsíméjl dot com
 
+Lingdin: daniel-marton-518a7738
+
 fb: danielhoudtvankaas
