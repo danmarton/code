@@ -7,8 +7,8 @@ Please do take a look at the files & have a nice day!
 Cheers,
 Daniel Marton 
 
-daniel dot marton at dzsíméjl dot com
-
 LinkedIn: [martondanidani](https://www.linkedin.com/in/martondanidani)
 
 Facebook: danielhoudtvankaas (Not safe for work!!!)
+
+Gmail: daniel.marton
