@@ -11,4 +11,4 @@ daniel dot marton at dzsíméjl dot com
 
 LinkedIn: [martondanidani](https://www.linkedin.com/in/martondanidani)
 
-Facebook: danielhoudtvankaas (NSFW!!!)
+Facebook: danielhoudtvankaas (Not safe for work!!!)
