@@ -1,0 +1,18 @@
+from string import join
+
+def printargs(*args):
+	for x in args: print x,
+	print
+
+def giveargs(*args):
+	return join(args)
+
+printargs("dani","jo","fej")
+
+print giveargs("dani","jo","fej")
+
+def prr(a, *b):
+	print a
+	print join(b)
+	
+prr('a','b','c','d')

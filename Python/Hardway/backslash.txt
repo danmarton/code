@@ -1,0 +1,17 @@
+>>> print "asd\bf"
+asf
+
+>>> print "asdf\rghj"
+ghjf
+
+>>> print """
+... List:
+... \t* Item1
+... \t* Item2
+... \t* Item3
+... """
+
+List:
+	* Item1
+	* Item2
+	* Item3

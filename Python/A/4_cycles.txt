@@ -1,0 +1,61 @@
+Többszörös futtatás (visszaugrás, ismétlés): WHILE és FOR
+
+	i = 0
+	while i < 10 :
+		print i
+		i += 1
+		
+	for i in range(10): print "Hello World!"
+	
+	for i in range(10): print i
+
+Range:	
+
+	range(10) = [ 0 , 1 , 2 , 3 , 4 , 5 , 6 , 7 , 8 , 9 ]
+
+	range(5,10) = [ 5 , 6 , 7 , 8 , 9 ]
+
+	range(2,10,2) = [ 2 , 4 , 6 , 8 ]
+
+	range(10,2,-2) = [ 10 , 8 , 6 , 4 ]
+
+	range(10,2,2) = [ ]
+
+
+FELADATOK (4.3)
+
+from swampy.TurtleWorld import *
+
+world = TurtleWorld()
+bob = Turtle()
+
+#1. Négyzet kirajzolása függvénnyel
+
+def square(t):
+	for i in range(4):
+		fd(t,100)
+		lt(t)
+
+#square(bob)		
+
+#2. Tetszőleges méretű négyzet (Polimorfizmus!)
+
+def square(t,l):
+	for i in range(4):
+		fd(t,l)
+		lt(t)
+		
+#square(bob,50)
+
+#3. Tetszőleges szabályos sokszög
+
+def square(t,l,s):
+	for i in range(s):
+		fd(t,l)
+		lt(t,360/s)
+		
+#square(bob,50,8)
+
+#4. Kör
+
+#5. Körív

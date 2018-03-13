@@ -1,0 +1,41 @@
+Paraméter = Változó 
+Argumentum = Érték
+Függvényhívás = argumentumok átadása paramétereknek
+
+Import = Module objektum létrehozása. Példa: type(math) ; print math
+
+Header = Signature
+Body = Törzs
+
+	!!! Flow of execution !!!
+
+Függvény:
+	Definíció = Függvény objektum létrehozása!
+	Hívás = kód lefuttatása paraméterekkel
+
+Function call -> Call stack -> Stack Diagram!
+
+Traceback: függvényhívások láncolatának visszakövetése a Main függvényig.
+
+A void függvény null objektumot ad vissza. (Python: None)
+
+Miért használunk függvényeket?
+	- A függvény neve információt hordozhat (akárcsak a változó neve).
+	- A függvénybe zárt kódot nem kell megismételni.
+	- A nem megismételt kódot csak egy helyen kell debugolni és fejleszteni.
+	- Ha jól elszigetelt és letesztelt függvényeket használunk, akkor csak a főprogramot kell debugolni!
+		Lásd még: Modularitás, Encapsulation
+		
+		
+FELADATOK
+
+#3.3 Kapott stringet jobbra igazítja 
+
+def right_justify(str):
+	print (70 - len(str)) * ' ' + str
+
+	
+#3.5 Kis négyzetekből nagy négyzetet rajzol, x = kis négyzetek száma.
+
+def square(x):
+	print x * ( (x*"+----" + "+\n") + 2 * (x*"|    " + "|\n") ) + (x*"+----" + "+")

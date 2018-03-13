@@ -1,0 +1,22 @@
+Interface = A függvény (vagy objektum) kapcsolata a külvilággal. Az a változó-halmaz, amelyet olvashat és írhat.
+	
+	Olvas: Paraméterek (fölveszik a függvényhívás argumentumainak értékét)
+	
+	Ír: Return value + Out vagy Ref kulcsszóval megjelölt paraméterek
+	
+	Globális változó: A függvényen kívül lett deklarálva (OOP: osztály-szintű változó)
+	Lokális változó: A függvény törzsén belül lett deklarálva
+	Interface: A függvény fejlécében lett deklarálva
+
+		
+Encapsulation = Kód becsomagolása egy interface mögé
+
+Generalization = Az interface kiterjesztése, hogy a függvény általános célú legyen
+	
+	Példa: Oldalak száma mint új paraméter -> Négyzet helyett tetszőleges sokszöget rajzolhatunk!
+	
+
+
+
+
+

@@ -1,0 +1,13 @@
+import itertools, string
+
+mess = open('/home/dan/Python/Challenge/mess.txt').read()
+
+result = list()
+six = mess[:7]
+    
+for a in mess[7:]:
+    if six[:3]==six[4:]: result.append(six)
+    six = six[1:]
+    six += a
+    
+for x in result: print x

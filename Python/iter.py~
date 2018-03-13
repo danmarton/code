@@ -1,0 +1,7 @@
+str = "g bml'r rfgli rfc com rjb cvgqrq"
+
+sol = ""
+
+for c in str: sol+= chr(ord(c)+2)
+
+print sol

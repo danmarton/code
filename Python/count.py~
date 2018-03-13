@@ -1,0 +1,5 @@
+s = "abcdabc"
+
+print s.count("abc"),
+print s.count("abc",0,3), #looks for abc in s[0:3]
+print s.count("abc",4)>0

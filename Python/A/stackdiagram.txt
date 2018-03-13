@@ -1,0 +1,29 @@
+The stack diagram is a very nice visual illustration of a running program!
+
+Here is how you can create one:
+
+    1. The first line is that of the main program. Write down the variable assignments one by one as they happen,
+    until the first function call. If the function will return something, write the name of the variable having to
+    store the result and leave it there. (If the list is repeating some pattern, you can shorten it with ellipsis.) 
+
+    2. Create a new line for the called function and do the same procedure, starting at the beginning of the line.
+    
+    3. Repeat creating new lines and writing down the variable assignments until one function finally returns.
+
+    4. Now you can move up one line and assign the variable if there's one waiting. Go back in your code to the
+    function of this line and write down the remaining assignments if there are any.
+
+    5. If there's a new function call, you can start it on the line below. The function there has already terminated
+    so she doesn't need it anymore. Just draw a vertical line and go ahead. (If the same functions are called many
+    times, use ellipsis.)
+    
+    6. Go on until you reach the end of the main program.
+    
+
+You can write a stack diagram with a simple text editor. It doesn't have to be very graphical...
+
+To make the diagram more clear, function calls and their surrounding calculations (with variable names substituted) can be written into the appropriate assignments, followed by their results. See the example!
+
+NOTE: 
+More telling (and more complex) diagrams are to be found in the Unified Modeling Language.
+These are canonized specifications of diagrams used by thousands of software engineers worldwide.

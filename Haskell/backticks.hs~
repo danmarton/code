@@ -1,0 +1,7 @@
+-- Infix notation can be used in definitions as well!
+
+myCompare :: (Ord a) => a -> a -> Ordering  
+a `myCompare` b -- There it is!
+    | a > b     = GT  
+    | a == b    = EQ  
+    | otherwise = LT

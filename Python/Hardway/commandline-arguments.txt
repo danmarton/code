@@ -1,0 +1,9 @@
+from sys import argv
+
+script, first, second = argv	
+
+#The script must be run with 2 arguments! No more, no less...
+
+print "The script is called", script
+print "First variable is", first
+print "Second variable is", second

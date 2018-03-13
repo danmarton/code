@@ -1,0 +1,18 @@
+# -*- coding: utf-8 -*-
+
+dan@G530:~$  pydoc raw_input
+
+>>> print end1 + end2 + end3 + end4 + end5 + end6 + \
+	end7 + end8 + end9 + end10 + end11 + end12
+	#Backslash escapes line feed! Next line can begin anywhere...
+
+>>> readline = raw_input("Type here: ")    # input() has security problems!
+
+>>> x = int(raw_input("Number: "))
+
+>>> txt = open("/home/dan/myfile.txt")
+
+>>> print txt.readline()	#Read to end of line
+>>> print txt.read()		#Read to end of file
+
+Ex14 fini

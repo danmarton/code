@@ -1,0 +1,20 @@
+movl  8(%ebp),  %edi
+movl 12(%ebp),  %edx
+movl 16(%ebp),  %ecx
+movl   (%edx),  %ebx
+movl   (%ecx),  %esi
+movl   (%edi),  %eax
+movl    %eax , (%edx)
+movl    %ebx , (%ecx)
+movl    %esi , (%edi)
+
+void reverse(int *xp, int *yp, int *zp)
+{
+   x = *xp;  //eax = edi
+   y = *yp;  //ebx = edx
+   z = *zp;  //esi = ecx
+
+   *yp = x;  //edx = eax
+   *zp = y;  //exc = ebx
+   *xp = z;  //edi = esi
+}

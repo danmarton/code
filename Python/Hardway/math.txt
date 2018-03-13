@@ -1,0 +1,5 @@
+2 - 1 / 4 + 6 > 2 - 1.0 / 4 + 6  #Floating point!
+
+1.0 / 2 * 4 = 2.0  #Division comes before Multiplication
+
+100 + 25 * 3 % 4 = 100 + ( (25 * 3) % 4 )  #Modulo goes after Multiply (but before Add)

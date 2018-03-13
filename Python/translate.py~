@@ -1,0 +1,11 @@
+import string
+
+table = string.maketrans("abcd","1234")
+
+print string.translate("dani", table)
+
+dani = "dani"
+
+print "dani".translate(table)
+
+print dani.translate(table)

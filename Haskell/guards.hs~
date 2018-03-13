@@ -1,0 +1,8 @@
+bodymass :: Float -> Float -> String
+bodymass weight_kg height_m
+    | bmi < s = "emo"
+    | bmi < m = "normal"
+    | bmi < l = "fat"
+    | otherwise  = "lard-ass"
+    where bmi = weight_kg / height_m^2
+          (s,m,l) = (18.5,25.0,30.0)

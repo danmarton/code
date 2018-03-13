@@ -1,0 +1,19 @@
+int arith(int x, int y, int z)
+{
+   int t1 = x+y;
+   int t2 = z*48;
+   int t3 = t1 & 0xFF;
+   int t4 = t2 * t3;
+   return t4;
+}
+
+>> gcc -O1 -c source.c; objdump -d source.o
+
+ 0:	8b 44 24 0c      	mov    0xc(%esp),%eax
+ 4:	8d 14 40         	lea    (%eax,%eax,2),%edx
+ 7:	c1 e2 04         	shl    $0x4,%edx
+ a:	8b 44 24 08      	mov    0x8(%esp),%eax
+ e:	03 44 24 04      	add    0x4(%esp),%eax
+12:	0f b6 c0         	movzbl %al,%eax
+15:	0f af c2         	imul   %edx,%eax
+18:	c3               	ret

@@ -1,0 +1,13 @@
+r = "%r"
+s = "%s"
+
+formatter=s
+
+formatter1 = formatter % "hello"
+formatter2 = formatter % formatter1
+formatter3 = formatter % formatter2
+formatter4 = formatter % formatter3
+
+print formatter4
+
+#Replace s with r!

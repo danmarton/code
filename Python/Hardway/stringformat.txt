@@ -1,0 +1,8 @@
+print "I've got %s eyes and %s hair." % (my_eyes, my_hair)
+
+print "%s + %s = %s" % ( 1 , 2 , 1+2 )    # 1+2 is replaced by 3
+
+%s = string (recommended)
+%d = decimal (number)
+
+%r = Raw Representation (in the computer), used for debugging

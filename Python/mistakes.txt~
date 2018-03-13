@@ -1,0 +1,9 @@
+Writing true and not True. Name 'true' is not defined!
+
+Not giving prompt and not handling lack of it.
+
+Printing filename instead of filename.read().
+
+Writing raw input instead of raw_input.
+
+str = print open(raw_input("File: ")).read() //Forgot to remove "print"!

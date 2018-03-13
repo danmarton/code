@@ -1,0 +1,12 @@
+import re, urllib
+
+sourcepage = urllib.urlopen("http://www.pythonchallenge.com/pc/def/equality.html")
+
+sourcetext = sourcepage.read()
+
+result = ""
+
+for x in re.findall("[^A-Z][A-Z]{3}[a-z][A-Z]{3}[^A-Z]", sourcetext):
+    result += x[4]
+    
+print result

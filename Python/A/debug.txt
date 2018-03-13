@@ -1,0 +1,9 @@
+- Illegális nevek: kulcsszavak, speciális karakterek, szóközök, számjegy a név elején
+
+- Nem definiált változónév: félregépelésnél is ezt írja ki! (Python: use before def)
+
+- Operátorok precedenciája (műveleti sorrend)
+
+- Nem azt a fájlt futtatom, amit éppen szerkesztek
+
+- Tab != Space

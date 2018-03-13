@@ -1,0 +1,26 @@
+>>> "ddsadsa"
+'ddsadsa'
+
+>>> "dssadsad'saddassd"
+"dssadsad'saddassd"
+
+>>> 'sdassad"sadss'
+'sdassad"sadss'
+
+>>> "adsdassad\"wwqewqe"
+'adsdassad"wwqewqe'
+
+>>> "adsdassad\"wwqew'qe"
+'adsdassad"wwqew\'qe'
+
+#These are raw outputs! Print statement would put them nice...
+
+>>> print """
+... Multi-line quote!
+... Plus there's no problem with single quotes...
+... Or "double" qoutes!
+... """
+
+>>> print """asdf
+... ghjk"""
+#No empty lines!

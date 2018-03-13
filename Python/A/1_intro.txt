@@ -1,0 +1,25 @@
+Programozó = Matematikus + Mérnök + Természettudós
+	Matek: formális nyelv
+	Mérnök: tervezés és döntéshozatal (trade-off)
+	Tudós: hipotézisek tesztelése
+	
+Problémamegoldás:   Probléma leírása  ->  Megoldás kifejlesztése  ->  Megoldás leírása
+	
+Low level vs High level  ->  Compiler vs Interpreter  ->  Interactive vs Script
+
+Program alapelemei:
+	- Input & Output
+	- Aritmetika
+	- Feltételes végrehajtás (IF)
+	- Ismétlés (WHILE)
+	
+	Programozás = feladat lebontása ezekre   -> Algoritmus!!!
+	
+Error:
+	Syntax error: nem fordul le.
+	Runtime error: lefordul, de nem fut (Exception).
+	Szemantikus: fut, de nem jól. ("What you wrote is not what you wanted to write.")
+	
+Programming = Debugging   (1.3.4 Experimental debugging)
+
+Hasznos: szándékos programhibák beírása, hogy a hatásukat tanulmányozhassuk!

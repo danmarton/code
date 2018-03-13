@@ -1,0 +1,7 @@
+Main: x=1; y=2, print=8100
+
+c: x=1, y=5, z=3, total=9, square=<call>8100, return=8100
+
+b: z=9, prod=<call>90, return=90
+
+a: x=10, y=9, return=90

@@ -1,0 +1,18 @@
+Value = Literal
+
+A változó végső soron csak syntactic sugar, ami a numerikus memória-címet alfabetikus névvel helyettesíti.
+
+Operátor = Függvény, csak prefix név helyett infix jellel hívjuk meg.
+
+	Python:   int**int = hatványozás, str+str = konkatenáció, int*str = ismétlés
+
+Magyar:
+Literál ->  Változó  ->  Operátor/Függvény  ->  Kifejezés  ->  Utasítás
+Angol:
+Value  ->  Variable  ->  Operator/Function  ->  Expression  ->  Statement
+
+#Kommentek: Ne azt írjuk hogy mit csinál a kód, hanem azt hogy MIÉRT?
+
+	Trükk: kommentek helyettesítése beszédes változó-nevekkel!
+	
+	DE: Ha túl hosszúak a nevek, akkor olvashatatlan lesz a kód!

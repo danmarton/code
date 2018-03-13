@@ -1,0 +1,13 @@
+from swampy.TurtleWorld import *
+
+def drawpolygon(t, l, s):
+    for i in range(s):
+        fd(t,l) #forward
+        lt(t,360/s) #left turn
+
+world = TurtleWorld()
+bob = Turtle()
+
+drawpolygon(bob,50,8)
+
+wait_for_user()
