@@ -1,7 +1,0 @@
-namespace MyNamespace
-{
-public class MyClass
-{
-    static void MyMethod() { System.Console.WriteLine("Sajt!"); }
-}
-}
