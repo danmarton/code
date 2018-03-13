@@ -7,6 +7,8 @@ These are, like I wrote in the initial commit message, my "personal" folder with
 Please do take a look at them & have a nice day!
 
 Cheers,
-Daniel Marton dot dzsíméjl dot com
+Daniel Marton 
+
+daniel dot marton at dzsíméjl dot com
 
 fb: danielhoudtvankaas
