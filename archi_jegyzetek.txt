@@ -176,8 +176,9 @@ Utasítás-regiszter: 141. oldal, The First Great Invention
       Gépi kódokról bővebben: assembly kurzus anyaga!
 
    Bus1: int++ egy clk cikluson belül a busz elkerülésével, hogy
-         Buszon (amiről ALU az egyik operandust közvetlen veszi)
-         az int lehessen & az ACC set-bitjét is ha meghajtjuk,
+         azon (melyről egyik operandusát az ALU is veszi) a szám
+         lehessen & ha ekkor az ACC set-bitjét is ha meghajtjuk,
+         ottan tárolódni fog az inkrementált szám.
          
-   Megj.: ALU opkód nem tárolódik regiszterben DE 0 = Add
-          úgyhogy az opkód biteket nem kell meghajtani
+   Megj.: ALU opkód nem tárolódik regiszterben DE 0 = Add vagyis
+          Az opkód biteket ilyenkor nem kell meghajtani
