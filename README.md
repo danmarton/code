@@ -7,7 +7,7 @@ Please take a look at the files & have a nice day!
 Cheers,
 Daniel Marton 
 
-LinkedIn: [martondani](https://www.linkedin.com/in/martondanidani)
+LinkedIn: [martondani](https://www.linkedin.com/in/martondani)
 
 Facebook: danielhoudtvankaas (Not safe for work!!!)
 
