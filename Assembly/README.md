@@ -1,1 +1,1 @@
-At Óbuda University there was a (mandatory) course called "Instruction-level CPU programming" ergo x86 assembly stuff
+At Óbuda University there was a (mandatory) course called "Instruction-level CPU programming" ergo x86 assembly stuff. I god a D of course, maybe because of writing these files in AT&T syntax and then I had to write the test in Intel syntax etc blah blah blah complaints!
