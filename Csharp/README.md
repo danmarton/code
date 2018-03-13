@@ -1,0 +1,1 @@
+C# was taught on almost all the programming courses except for a special Java course - the reason of which is still unclear to me, I mean they could have just as well done a separate C# & .Net course, but I'm trying to maintain a benevolent attitude!
