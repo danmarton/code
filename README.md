@@ -11,6 +11,6 @@ Daniel Marton
 
 daniel dot marton at dzsíméjl dot com
 
-Lingdin: martondanidani
+[Lingdin!!!](https://www.linkedin.com/in/martondanidani)
 
 fb: danielhoudtvankaas
