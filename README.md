@@ -1,6 +1,6 @@
 # Hello!
 
-Yeah, it's me: Dani!!! This is, like I wrote in the initial commit message, my "personal" folder with all sorts of random code I wrote in order to practice all sorts of different programming languages & stuff.
+Yeah, it's me: Dani!!! This is my "personal" folder with all sorts of random code I wrote in order to practice all sorts of different programming languages & stuff.
 
 Please do take a look at them & have a nice day!
 
