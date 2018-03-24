@@ -9,6 +9,4 @@ Daniel Marton
 
 LinkedIn: [martondani](https://www.linkedin.com/in/martondani)
 
-Facebook: danielhoudtvankaas (Not safe for work!!!)
-
 Gmail: daniel.marton
